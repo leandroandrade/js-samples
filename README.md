@@ -1,6 +1,6 @@
 # js-sample
 
-Exmplos de código JavaScript/Nodejs
+Exemplos de código JavaScript/Nodejs
 
 Instalação:
 
