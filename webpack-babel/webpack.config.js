@@ -1,10 +1,20 @@
 const path = require('path');
 
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const FixStyleOnlyEntriesPlugin = require("webpack-fix-style-only-entries");
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+
 module.exports = {
-    entry: path.resolve(__dirname, 'src', 'index.js'),
+    entry: {
+        first: path.resolve(__dirname, 'src', 'first.js'),
+        second: path.resolve(__dirname, 'src', 'second.js'),
+
+        background: path.resolve(__dirname, 'src', 'background.css'),
+        font: path.resolve(__dirname, 'src', 'font.css'),
+    },
     output: {
         path: path.resolve(__dirname, 'public'),
-        filename: 'bundle.js'
+        filename: '[name].bundle.js'
     },
     devServer: {
         contentBase: path.resolve(__dirname, 'public'),
@@ -20,17 +30,14 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    { loader: "style-loader" },
-                    { loader: "css-loader" },
-                ]
-            },
-            {
-                test: /.*\.(gif|png|jpe?g)$/i,
-                use: {
-                    loader: "file-loader"
-                },
+                use: [MiniCssExtractPlugin.loader, 'css-loader'],
             }
         ]
-    }
+    },
+    plugins: [
+        new MiniCssExtractPlugin({ filename: "[name].min.css" }),
+        new FixStyleOnlyEntriesPlugin(),
+        new OptimizeCSSAssetsPlugin({}),
+
+    ]
 };

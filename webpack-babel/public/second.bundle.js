@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/second.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/second.js":
+/*!***********************!*\
+  !*** ./src/second.js ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var sum = function sum(first, second) {\n  return first + second;\n};\n\nalert(sum(2, 2));\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("var showMessage = function showMessage(message) {\n  console.log(message);\n};\n\nshowMessage('Hello Second');\n\n//# sourceURL=webpack:///./src/second.js?");
 
 /***/ })
 
