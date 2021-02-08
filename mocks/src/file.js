@@ -23,7 +23,9 @@ module.exports = class File {
     }
 
     static isValid(csvString, options = DEFAULT_OPTIONS) {
+        // const [header, ...fileWithoutHeader] = csvString.split('\n');
         const [header, ...fileWithoutHeader] = csvString.split(os.EOL);
+
         const isHeaderValid = header === options.fields.join(',');
         if (!isHeaderValid) {
             return {
@@ -46,11 +48,13 @@ module.exports = class File {
     }
 
     static parseCSVToJSON(csvString) {
+        // const lines = csvString.split('\n');
         const lines = csvString.split(os.EOL);
 
         const firstLine = lines.shift();
         const header = firstLine.split(',');
-        const users = lines.map(line => {
+
+        return lines.map(line => {
             const columns = line.split(',');
             const user = {};
             for (const index in columns) {
@@ -58,6 +62,5 @@ module.exports = class File {
             }
             return new User(user);
         });
-        return users;
     }
 };
