@@ -1,13 +1,8 @@
-'use strict';
+const managerViewRefactor = () => {};
 
-const managerViewRefactor = () => {
-
-};
-
-const bossViewRefactor = () => {
-
-};
+const bossViewRefactor = () => {};
 
 module.exports = {
-    managerViewRefactor, bossViewRefactor
+    managerViewRefactor,
+    bossViewRefactor,
 };

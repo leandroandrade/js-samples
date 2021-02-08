@@ -1,13 +1,8 @@
-'use strict';
+const createObjectRefactor = () => {};
 
-const createObjectRefactor = () => {
-
-};
-
-const getObjectRefactor = () => {
-
-};
+const getObjectRefactor = () => {};
 
 module.exports = {
-    createObjectRefactor, getObjectRefactor
+    createObjectRefactor,
+    getObjectRefactor,
 };

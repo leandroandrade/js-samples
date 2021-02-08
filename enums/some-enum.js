@@ -1,7 +1,7 @@
 const Choices = Object.freeze({
     ROCK: 'rock',
     PAPER: 'paper',
-    SCISSORS: 'scissors'
+    SCISSORS: 'scissors',
 });
 
 console.log(Choices.ROCK);

@@ -1,10 +1,6 @@
-'use strict';
-
 const views = require('./view');
 const crud = require('./crud');
 
-const awesomeThing = () => {
+const awesomeThing = () => {};
 
-};
-
-module.exports = Object.assign({ awesomeThing }, views, crud);
+module.exports = { awesomeThing, ...views, ...crud };

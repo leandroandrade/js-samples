@@ -1,7 +1,7 @@
-const os = require('os')
+const os = require('os');
 
 // array of information about each cpu core
-console.log(os.cpus())
+console.log(os.cpus());
 
 // total memory, free memory, in Gigabyte:
 console.log(os.totalmem() / 1024 / 1024 / 1024);

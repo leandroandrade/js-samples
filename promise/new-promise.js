@@ -5,7 +5,6 @@ const STATE = {
 };
 
 class NewPromise {
-
     constructor(executor) {
         if (typeof executor !== 'function') {
             throw new Error('Executor must be a function');
@@ -31,9 +30,7 @@ class NewPromise {
 
         this.state = STATE.FULFILLED;
         this.value = res;
-
     }
-
 }
 
 module.exports = NewPromise;

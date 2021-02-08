@@ -19,5 +19,3 @@ readFilePromise(__filename).then(content => {
 });
 
 console.log('>> Fim execucao');
-
-

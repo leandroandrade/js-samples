@@ -7,7 +7,7 @@ fs.statSync('./index.html').isDirectory();
 fs.readdir('./test-dir', (err, files) => {
     files.forEach(file => {
         console.log(file);
-    })
+    });
 });
 
 // Watch a directory for changes and give out the type of change

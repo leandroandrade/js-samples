@@ -1,5 +1,3 @@
-'use strict';
-
 const thing = require('./modules/thing');
 
 thing.createObjectRefactor();

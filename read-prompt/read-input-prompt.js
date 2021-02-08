@@ -2,7 +2,7 @@ const readline = require('readline');
 
 const rl = readline.createInterface({
     input: process.stdin,
-    output: process.stdout
+    output: process.stdout,
 });
 
 console.log('Type some number');
@@ -13,13 +13,12 @@ console.log('Type some number');
 // });
 
 rl.on('line', input => {
-    console.log(`You entered with: ${ input }`);
+    console.log(`You entered with: ${input}`);
 });
 
 rl.on('SIGINT', input => {
-    rl.question('Are you sure you want to exit? ', (answer) => {
-        if (answer.match(/^y(es)?$/i)) process.exit()
+    rl.question('Are you sure you want to exit? ', answer => {
+        if (answer.match(/^y(es)?$/i)) process.exit();
         else console.log('Ok, here we go...');
-    })
+    });
 });
-
