@@ -1,0 +1,1 @@
+{"processes":{"cb1e4909-e652-4b0e-8fc0-c8cb90a2fd90":{"parent":"d240c763-2505-4788-9f6d-6f0b3501d7bd","children":[]},"d240c763-2505-4788-9f6d-6f0b3501d7bd":{"parent":null,"children":["cb1e4909-e652-4b0e-8fc0-c8cb90a2fd90"]}},"files":{"/Users/leandroandrade/Desenvolvimento/projetos/js/js-samples/coverage-e2e/api.js":["cb1e4909-e652-4b0e-8fc0-c8cb90a2fd90"]},"externalIds":{}}
