@@ -18,11 +18,11 @@ const routes = {
             ) {
                 response.writeHead(401);
                 response.write('Logging failed!');
-                return response.end();
+            } else {
+                response.write('Logging has succeeded!');
             }
-            response.write('Logging has succeeded!');
-            return response.end();
         }
+        return response.end();
     },
     default: (reques, response) => {
         response.write('Hello World!');
