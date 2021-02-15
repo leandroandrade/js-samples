@@ -1,6 +1,6 @@
-import fetch from 'node-fetch';
-import { promises as fs } from 'fs';
-import { promisify } from 'util';
+const fetch = require('node-fetch');
+const { promises: fs } = require('fs');
+const { promisify } = require('util');
 
 const sleep = promisify(setTimeout);
 
