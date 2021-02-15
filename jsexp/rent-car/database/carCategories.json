@@ -1,0 +1,12 @@
+[
+  {
+    "id": "da8e417c-93e0-421f-87c6-6d95fcbc34ea",
+    "name": "Minivan",
+    "carIds": [
+      "cd9e2e5d-fa81-442c-a91e-43d17f45d62e",
+      "da2872ad-2d88-4691-82f7-a2a2375fd7a8",
+      "21e9d6c0-b0eb-486f-90b5-2acc7e532664"
+    ],
+    "price": "43.14"
+  }
+]
