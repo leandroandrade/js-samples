@@ -33,6 +33,8 @@ function* promisified() {
     yield Promise.resolve('Hey John');
 }
 
+// Promise.all([...promisified()]).then(result => console.log(result));
+
 async function* systemInfo() {
     const file = await readFile(__filename);
     yield { file: file.toString() };
@@ -43,7 +45,6 @@ async function* systemInfo() {
     const dir = await readdir(__dirname);
     yield { dir };
 }
-// Promise.all([...promisified()]).then(result => console.log(result));
 
 // (async () => {
 //     for await (const data of promisified()) {
