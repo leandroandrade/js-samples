@@ -23,5 +23,6 @@ module.exports = {
         ],
         'no-unused-vars': ['error', { argsIgnorePattern: 'next' }],
         'no-unused-expressions': [2, { allowShortCircuit: true }],
+        'no-return-await': 'off'
     },
 };
